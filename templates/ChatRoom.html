@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Chat Room</title>
+    <link rel="stylesheet" type="text/css" href="css/ChatRoom.css">
+</head>
+<body>
+    <h1 ></h1>
+    <div id="content">
+        <div id="background"></div>
+        <div id="TopButtons">
+            <button onclick="location.href='./SeeAvailable.html'">Back</button>
+            <button onclick="confirmTrip()"><span>Confirm</span></button>
+        </div>
+        <div id="ChatBody" onload="updateChat()">
+            <div id="ChatContent"></div>
+            <div id="ChatBtn">
+                <form method="post" name="chat">
+                    <textarea rows="1" class="input" name="ChatValue" ></textarea> 
+                    <button onclick="ChatSend(this.form);" >Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

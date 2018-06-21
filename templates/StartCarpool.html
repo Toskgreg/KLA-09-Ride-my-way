@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Offer Ride</title>
+    <link rel="stylesheet" type="text/css" href="css/StartCarpool.css">
+</head>
+<body onload="update()">
+    <h1></h1>
+    <div id="content">
+        <div id="background"></div>
+        <form autocomplete="on" method="POST">
+            <p class="formElement">Start Address</p>
+            <input type="text" id="start" placeholder="Enter your pickup location" required>
+            <p class="formElement">End Destination</p>
+            <input type="text" id="destination" placeholder="Enter your end destination " required>
+            <p class="formElement">Depart Time</p>
+            <input type="text" id="dateTime" placeholder="Format: Jan 1, 09:00 A.M" required>
+            <p class="formElement">Vehicle Model</p>
+            <input type="text" id="model" placeholder="Type and Seat Capacity" required>
+            <p class="formElement">Drivers Contact</p>
+            <input type="text" id="number" placeholder="Telephone" required>
+        </form>
+        <button id="back" onclick="location.href='./MyAccount.html'"><span>Back</span></button>
+        <button id="find" onclick="location.href='./driverpanel.html'" >Create Offer</button>
+    </div>
+</body>
+
+</html>

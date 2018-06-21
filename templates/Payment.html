@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="css/Payment.css">
+</head>
+<body>
+    <h1></h1>
+    <div id="content">
+        <div id="background"></div>
+        <p id="heading">Payment</p>
+        <form autocomplete="on" method="POST">
+            <p class="formElement">E-mail</p>
+            <input type="text" id="email" placeholder="email" required>
+            <p class="formElement">Passenger mobile money Number</p>
+            <input type="text" id="mm" placeholder="Passenger mobile money Number" size="16"required>
+            <p class="formElement">Driver mobile money Number</p>
+            <input type="text" id="mm" placeholder="Driver mobile money Number" required>
+            <p class="formElement">Confimation You have Finished Trip</p>
+            <input type="text" id="booelan" placeholder="Yes/No size="3" required>
+        </form>
+        <button class="button" onclick="submit()"><span>Next</span></button>
+    </div>
+  
+</body>
+</html>
