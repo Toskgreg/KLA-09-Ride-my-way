@@ -6,10 +6,13 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install pytest pytest-cov
+  - pip install pytest
+  - pip install nose
+  
 
 # command to run tests
 script:
-  - pytest --cov=app/
+  nosetests
 
 after_success:
 - coveralls
